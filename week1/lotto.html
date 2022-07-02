@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script type="text/javascript" src="lotto.js">
+        
+    </script>
+    <script>
+        var lotto = [];
+        // for(var i = 0; i<8; i++) {
+        //     var num = parseInt(Math.random() * 45 +1);
+        //     if(lotto.indexOf(num) == -1) {
+        //         lotto.push(num);
+        //     }
+        // }
+        while(lotto.length < 6) {
+            var num = parseInt(Math.random() * 45 +1);
+            if(lotto.indexOf(num) == -1) {
+                lotto.push(num);
+            }
+        }
+        lotto = lotto.sort((a, b) => a-b);
+        document.write(lotto);
+    </script>
 </body>
 </html>
