@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 기초</title>
+</head>
+
+<body>
+    <h1>jQuery 기초</h1>
+    <textarea id="content">jQuery를 배워보자</textarea>
+    <button id="click">click</button>
+    <button id="click2">click2</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        console.log($('#content').val());
+        function hello() {
+            console.log('hello');
+        }
+        $('#click').click(hello);
+        $('#click2').click(function() {
+            console.log('click2');
+        });
+    </script>
+</body>
+
+</html>
