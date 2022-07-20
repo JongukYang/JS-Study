@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기념일 계산기 만들기</title>
+</head>
+<body>
+    <h1>객체 (Object)</h1>
+    <script>
+        var jonguk = {
+            name: 'jonguk Yang',
+            age: 25,
+            sayHello: function() {
+                console.log("hi i m jonguk");
+            }
+        }
+        console.log(jonguk.name);
+        console.log(jonguk.age);
+        console.log(jonguk.sayHello());
+    </script>
+    <script>
+        // Date Object test
+        var date = new Date();
+        console.log(date.getFullYear()); // 연도 가져옴
+        console.log(date.getMonth() +1); // 월 정보 -> 0부터 시작해서 +1 을 해야 정확한 월 나옴
+        console.log(date.getDate()); // 일 정보를 가져옴
+        // 1970년 1월 1일 00:00:00을 기준으로 흐른 시간ㅇ르 밀리초로 표시하는 메서드 .getTime()
+        console.log(date.getTime());
+        // 특정 일의 Date 객체 생성
+        var christmas = new Date('2022-12-25');
+        console.log(christmas);
+        // 특정 ms의 Date 객체 생성
+        var ms = new Date(1000);
+        console.log(ms);
+    </script>
+</body>
+</html>
